@@ -1,0 +1,29 @@
+header {
+    .navbar {
+        padding: 25px 0 39px;
+
+        &-nav {
+			max-width: 618px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin: 3px auto 0;
+        }
+		.btn {
+			padding: 13px 26px;
+			letter-spacing: 0px;
+		}
+    }
+
+    .nav-link {
+        color: #fff;
+        line-height: 146%;
+
+        /* 23.36px */
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+	
+}
