@@ -1,0 +1,47 @@
+@media screen and (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+    header {
+        .navbar {
+            padding: 16px 0 15px;
+
+            .btn {
+                margin-bottom: 60px;
+                max-width: 295px;
+                width: 100%;
+                justify-content: center;
+                padding: 22px 26px;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        .navbar-nav {
+
+            margin: 37px auto 21px;
+        }
+
+        .nav-link {
+            color: #fff;
+            line-height: 222%;
+            font-size: 24px;
+            padding: 0 0 11px;
+        }
+
+    }
+
+    .logo {
+        img {
+            max-height: 36px;
+        }
+    }
+   
+    
+
+    #navbarSupportedContent {
+        margin: 0 -20px;
+        text-align: center;
+        background-color: $bg-secondary;
+        transform: translate(0, 16px);
+    }
+}

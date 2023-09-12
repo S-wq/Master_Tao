@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#89C249">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-    <title>MasterTai</title>
+    <title>MasterTao</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -18,11 +18,15 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="logo" href="index.html">
-              <img src="assets/img/logo.svg" alt="logo">
-          </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <img src="assets/img/logo.svg" alt="logo">
+            </a>
+
+                <button id="hamburger" class="navbar-toggler hamburger hamburger--spin js-hamburger" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" type="button">
+                    <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                    </span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -43,19 +47,95 @@
                     </ul>
                     <button type="button" class="btn btn-primary">Оставить заявку</button>
                 </div>
+
+
             </div>
         </nav>
     </header>
+
     <main class="wrapper home">
+        <section class="advantages container-fluid">
+            <div class="container">
+                <div class="template-title">
+                    <h2>Почему стоит выбрать именно нас?</h2>
+                </div>
+                <div id="advanages-slider" class="row advanage-row">
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-1.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Таможенное оформление груза</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-2.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Страховка груза</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-3.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Проверка товара на брак</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-4.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Доставка в любой город Украины</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-5.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Консолидация на складе</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-6.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Ответственное хранение груза</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-7.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Помощь воплате товара</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advanage">
+                            <div class="advanage-img-box">
+                                <img src="assets/img/advantage-8.svg" class="advantage-img" alt="advantage-1">
+                            </div>
+                            <h5 class="advantage-title">Упаковка, переупаковка, паллетирование груза к международной перевозке</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
-    <script async src="assets/js/bootstrap.bundle.min.js"></script>
-    <script async src="assets/js/jquery-3.7.0.min.js"></script>
-    <script async src="assets/js/jquery.fancybox.min.js"></script>
-    <script async src="assets/js/slick.min.js"></script>
-    <script async src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
