@@ -15,12 +15,20 @@ $(document).ready(function() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendArrows: '.first-screen-nav'
+    appendArrows: '.first-screen-nav',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
   $('.first-screen').append($('.first-screen-nav'));
 
 
-  mobileOnlySlider("#advanages-slider", true, false, 1024);
+  mobileOnlySlider("#advanages-slider", true, false, 991);
 
   function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
     var slider = $($slidername);

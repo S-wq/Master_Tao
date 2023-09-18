@@ -729,8 +729,21 @@ header .nav-link:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  h1, .first-screen-title,
+  .h1 {
+    font-size: 32px;
+  }
+  h2,
+  .h2 {
+    font-size: 25px;
+  }
+  h5,
+  .h5 {
+    font-size: 18px;
+  }
   .container {
-    padding: 0 20px;
+    padding: 1px 20px 0;
+    z-index: 2;
   }
   header .navbar {
     padding: 16px 0 15px;
@@ -760,6 +773,63 @@ header .nav-link:hover {
     text-align: center;
     background-color: #363A4D;
     transform: translate(0, 16px);
+  }
+  .first-screen-item {
+    min-height: calc(100vh - 67px);
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+  .first-screen-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(4, 5, 17, 0.0823529412);
+    z-index: 1;
+  }
+  .first-screen-item .btn {
+    width: 295px;
+  }
+  .first-screen-item .btn.btn-lg .icon {
+    margin: 0 -14px 0 37px;
+  }
+  .first-screen-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto 3px;
+  }
+  .first-screen-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin: 12px auto 22px;
+    max-width: 991px;
+  }
+  .first-screen {
+    max-width: 100%;
+  }
+  section.container-fluid, .container-fluid.first-screen {
+    padding: 54px 0px 60px;
+    position: relative;
+  }
+  section.container-fluid:before, .container-fluid.first-screen:before {
+    content: "";
+    border-radius: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 479px;
+  }
+  section.container-fluid .slick-dots, .container-fluid.first-screen .slick-dots {
+    position: absolute;
+    bottom: 0px;
+  }
+  .template-title {
+    margin-bottom: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
