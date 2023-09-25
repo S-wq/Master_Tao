@@ -121,12 +121,12 @@ h4,
 
 h5,
 .h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h6,
 .h6 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ol {
@@ -368,8 +368,8 @@ section.container-fluid:before, .container-fluid.first-screen:before {
   content: "";
   border-radius: 20px;
   position: absolute;
-  left: 42px;
-  right: 42px;
+  left: 50px;
+  right: 50px;
   top: 0;
   height: 100%;
   background-color: #363A4D;
