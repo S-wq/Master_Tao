@@ -94,32 +94,32 @@
         </div>
         <div class="first-screen-nav"></div>
 
-        <section class="calculations">
+        <section class="calculation">
             <div class="container">
-                <div class="template-title col-lg-7">
+                <div class="template-title col-lg-7 calculation-title">
                     <h2>Получить рассчет стоимости доставки вашего груза</h2>
                 </div>
-                <div class="calculations-row">
-                    <form class="calculations-form">
+                <div class="calculation-row">
+                    <form class="calculation-form">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="input-box">
-                                    <label for="cargo-category">Категория товара:</label>
-                                    <input type="text" id="cargo-category" name="cargo-category" placeholder="Категория товара" value="null">
+                                    <label for="product-category">Категория товара:</label>
+                                    <input type="text" id="product-category" name="product-category" placeholder="Категория товара" value="Хорошая Категория">
                                 </div>
                                 <div class="input-box">
-                                    <label for="cargo-weight">Вес груза (кг):</label>
-                                    <input type="number" id="cargo-weight" name="cargo-weight" placeholder="Введите вес" value="0">
+                                    <label for="product-weight">Вес груза (кг):</label>
+                                    <input type="number" id="product-weight" name="product-weight" placeholder="Введите вес" value="10">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input-box">
-                                    <label for="cargo-price">Стоимость груза:</label>
-                                    <input type="number" id="cargo-price" name="cargo-price" placeholder="Введите стоимость">
+                                    <label for="product-price">Стоимость груза:</label>
+                                    <input type="number" id="product-price" name="product-price" placeholder="Введите стоимость">
                                 </div>
                                 <div class="input-box">
-                                    <label for="cargo-volume">Объем груза (м<sup>3</sup>):</label>
-                                    <input type="number" id="cargo-volume" name="cargo-volume" placeholder="Введите объем">
+                                    <label for="product-volume">Объем груза (м3):</label>
+                                    <input type="number" id="product-volume" name="product-volume" placeholder="Введите объем">
                                 </div>
                             </div>
                         </div>
@@ -131,15 +131,15 @@
                                         <label for="Insurance">Страховка</label>
                                     </div>
                                     <div class="check-button">
-                                        <input id="customs" type="checkbox" name="customs">
+                                        <input id="checkbox2" type="checkbox" name="terms2">
                                         <label for="checkbox2">Таможенное оформление</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input-box">
-                                    <label for="cargo-TNCode">Код ТН ВЭД:</label>
-                                    <input type="text" id="cargo-TNCode" name="cargo-TNCode" placeholder="Введите код">
+                                    <label for="product-tnCode">Код ТН ВЭД:</label>
+                                    <input type="text" id="product-tnCode" name="product-tnCode" placeholder="Введите код">
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                             <div class="col-lg-12">
                                 <div class="input-box">
                                     <div id="file-name"></div>
-                                    <label for="fileInput">Загрузить фото товара</label>
+                                    <label for="fileInput">Загрузите фото товара</label>
                                     <input type="file" id="fileInput" name="fileInput">
                                 </div>
                             </div>
@@ -156,17 +156,20 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="input-box">
-                                    <button type="submit" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/arrow.svg" class="icon" alt="icon"></button>
+                                    <button type="submit" class="btn btn-primary btn-lg next-step">Следующий шаг<img src="assets/img/arrow.svg" class="icon" alt="icon"></button>
                                 </div>
                             </div>
                         </div>
                     </form>
                     <div class="calculation-decoration">
-                        <img src="assets/img/calculations.png" class="img-fluid" alt="calculations-decoration">
+                        <img src="assets/img/calculations.png" class="img-fluid" alt="calculation-decoration">
                     </div>
                 </div>
             </div>
         </section>
+
+
+
 
 
 

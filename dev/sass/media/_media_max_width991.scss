@@ -1,6 +1,7 @@
 @media screen and (max-width: 991px) {
-
-   
+    .next-step{
+        width: 100%;
+    }
     h1,
     .h1 {
         font-size: 32px;
@@ -36,7 +37,8 @@
     }
 
     .container {
-        padding: 0 20px;
+        padding: 1px 20px 0;
+        z-index: 2;
     }
 
     header {
@@ -66,6 +68,7 @@
         }
 
     }
+    
 
     .logo {
         img {
@@ -104,55 +107,70 @@
         font-weight: 400;
     }
 
+    .first-screen-item {
+        min-height: calc(100vh - 67px);
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+        .container{
+            padding: 0 50px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #04051115;
+            z-index: 1;
+            
+        }
+        .btn {
+            width: 295px;
+            &.btn-lg {
+
+                .icon {
+                    margin: 0 -14px 0 37px;
+            }
+            }
+        }
+    }
+    .first-screen-title {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 auto 3px;
+    }
+    .first-screen-subtitle {
+        font-size: 16px;
+        text-align: center;
+        margin: 12px auto 22px;
+        max-width: 991px;
+    }
     .first-screen {
         max-width: 100%;
-
-
-        &__item {
-            min-height: calc(100vh - 67px);
-            border-radius: 0;
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-
-            &:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #04051114;
-                z-index: 1;
-            }
-
-            >.container {
-                z-index: 2;
-            }
-
-            .btn {
-                width: 295px;
-
-                &.btn-lg {
-
-                    .icon {
-                        margin: 0 -14px 0 37px;
-                    }
-                }
-            }
+    }
+    section.container-fluid, .container-fluid.first-screen {
+        padding: 54px 0px 60px;
+        position: relative;
+        &:before {
+            content: "";
+            border-radius: 0px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 479px;
+            
         }
-
-        &__title {
-            font-size: 32px;
-            margin: 0 auto 10px;
-            padding: 0 20px;
+        .slick-dots{
+            position: absolute;
+            bottom: 0px;
         }
-
-        &__subtitle {
-            font-size: 16px;
-            margin: 0 auto 18px;
-            padding: 0 30px;
-        }
+    }
+    .template-title{
+        margin-bottom: 45px;
     }
 
     section.container-fluid,
@@ -168,7 +186,7 @@
     }
 
   
-    .calculations-form {
+    .calculation-form {
         padding: 50px 26px 15px;
         margin: 0 auto;
         .btn {
@@ -180,7 +198,7 @@
             }
         }
     }
-    .calculations-decoration {
+    .calculation-decoration {
         display: none;
     }
     .padding-bottom {
@@ -190,4 +208,11 @@
         margin-bottom: 7px;
         padding-left: 4px;
     }
+}
+
+@media screen and (max-width: 955px) {
+    .carousel-template {
+        max-width: 390px;
+    }
+ 
 }

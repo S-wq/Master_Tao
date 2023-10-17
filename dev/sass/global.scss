@@ -3,7 +3,6 @@
     background-color: $color-secondary;
 }
 
-
 body {
     background-color: $bg-primary;
     color: $text-color;
@@ -57,12 +56,12 @@ h4,
 
 h5,
 .h5 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h6,
 .h6 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ol {
@@ -83,15 +82,6 @@ ol {
 ul {
     li{
         list-style: none;
-        &:not([class]):before{
-            content: "";
-            background-color: $color-secondary;   
-            margin-right: 12px;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            display: inline-block;
-        }
     }
 }
 
@@ -124,8 +114,7 @@ ul {
 }
 
 .check-button {
-    margin-bottom: 6px;
-    padding-left: 2px;
+    margin-bottom: 14px;
 }
 
 /*scss*/
@@ -144,8 +133,8 @@ ul {
 
     +label {
         display: flex;
-        align-items: center;
         cursor: pointer;
+        letter-spacing: -0.4px;
 
         &:before {
             content: "";
@@ -155,7 +144,7 @@ ul {
             border-radius: 4px;
             width: 24px;
             height: 24px;
-            margin-right: 10px;
+            margin-right: 9px;
 
         }
 
@@ -239,7 +228,7 @@ ul {
 }
 
 .btn-lg {
-    padding: 19.6px 34px;
+    width: 253px;
     font-size: 16px;
 
     .icon {
@@ -330,93 +319,17 @@ ul {
     display: flex;
 }
 
-.slick-arrow {
-    font-size: 0;
-    width: 92px;
-    height: 92px;
-    border: none;
-    background: center no-repeat transparent;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='42' viewBox='0 0 24 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.40237 41.2538C3.1171 41.5391 2.76051 41.6817 2.36827 41.6817C1.97602 41.6817 1.61943 41.5391 1.33416 41.2538C0.763614 40.6833 0.763614 39.7561 1.33416 39.1856L19.5202 20.9996L1.33416 2.81351C0.763614 2.24296 0.763614 1.31583 1.33416 0.74529C1.9047 0.174747 2.83183 0.174747 3.40237 0.74529L22.6225 19.9654C23.1931 20.536 23.1931 21.4631 22.6225 22.0337L3.40237 41.2538Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
-    &:hover {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-        background-image: url("data:image/svg+xml,%3Csvg width='24' height='42' viewBox='0 0 24 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.40237 41.2538C3.1171 41.5391 2.76051 41.6817 2.36827 41.6817C1.97602 41.6817 1.61943 41.5391 1.33416 41.2538C0.763614 40.6833 0.763614 39.7561 1.33416 39.1856L19.5202 20.9996L1.33416 2.81351C0.763614 2.24296 0.763614 1.31583 1.33416 0.74529C1.9047 0.174747 2.83183 0.174747 3.40237 0.74529L22.6225 19.9654C23.1931 20.536 23.1931 21.4631 22.6225 22.0337L3.40237 41.2538V41.2538Z' fill='%2389C249'/%3E%3C/svg%3E%0A");
-    }
-
-    &.slick-prev {
-        transform: rotate(180deg);
-    }
-}
-.slick-dots {
-    display: flex;
-    justify-content: center;
-}
-
-ul.slick-dots {
-    padding: 0;
-    margin: 0;
-
-    > li {
-        margin: 0 13px;
-        height: 8px;
-        font-size: 0;
-        
-        &:before{
-            display: none;
-        }
-        
-        &.slick-active {
-            button {
-                background-color: #fff;
-            }
-        }
-    }
-
-    button {
-        font-size: 0;
-        padding: 0px;
-        border-radius: 50%;
-        opacity: 0.9;
-        border: 2px solid #FFFFFF;
-        width: 8px;
-        height: 8px;
-        background: transparent;
-        outline: none;
-    }
-}
-
-// .slider-template {
-   
-//         margin: 0 -15px;
- 
-//     .slick-slide {
-//         padding: 0 15px 27px;
-//     }
-//     .slick-arrow {
-//         position: absolute;
-//         top: 50%;
-//         transform: translate(0, -50%);
-//         &.slick-prev {
-//             left: -100px;
-//             transform: rotate(180deg) translate(0, 50%);
-//         }
-//         &.slick-next{
-//             right: -100px;
-//         }
-//     }
-// }
-
-// .slider-template__img-box img {
-//     border-radius: 20px;
-// }
-
 
 section {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $section-margin-lg;
-    max-width: 1920px;
+    // max-width: 1920px;
     
- 
+    &.first-screen {
+        max-width: calc(100% - 84px);
+    }
 
     &:last-of-type {
         margin-bottom: 56px;
@@ -430,12 +343,11 @@ section {
             content: "";
             border-radius: 20px;
             position: absolute;
-            left: 42px;
-            right: 42px;
+            left: 50px;
+            right: 50px;
             top: 0;
             height: 100%;
             background-color: $bg-secondary;
-         
             z-index: -1;
         }
     }
@@ -484,7 +396,6 @@ section {
     /*type 3*/
     &.col-lg-7 {
         margin-bottom: 35px;
-        text-align: left;
         h2 {
             &:after {
                 content: "";
@@ -513,28 +424,21 @@ section {
 }
 
 .input-box {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    position: relative;
     label {
         font-weight: 600;
         font-size: 15px;
         line-height: 126%;
-        margin-top: 1px;
         margin-bottom: 6px;
     }
 
     input {
         border-radius: 10px;
-        padding: 17px 20px;
-        font-size: 14px;
-        min-height: 56px;
+        padding: 16px 10px;
         border: none;
         transition: .2s;
-        width: 100%;
-        
         &:focus-visible {
             outline: none;
         }
@@ -542,13 +446,8 @@ section {
         &:hover {
             box-shadow: 0px 0px 4px 2px $color-primary;
         }
-
         &:focus {
             box-shadow: 0px 0px 4px 2px $color-secondary;
-        }
-
-        &::placeholder {
-            color: #CBCBCB;
         }
     }
 }
@@ -561,3 +460,7 @@ section {
     margin-bottom: 6px;  /*для input-box*/
 }
   
+.slick-initialized .slick-slide
+{
+    display: flex;
+}

@@ -1,4 +1,4 @@
-.calculations {
+.calculation {
     overflow-x: clip;    
  
 
@@ -34,7 +34,16 @@
         padding: 11px 10px;
         margin: 35px auto 7px auto;
     }
+    .calculation-title {
+        text-align: left;
+    }
+    .next-step {
+        height: 68px;
+    }
 }
+
+
+
 
 #fileInput {
     display: none;
@@ -49,3 +58,5 @@
 .padding-bottom {
     margin-top: 20px;
 }
+
+
